@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.qameta.allure:allure-plugin-api:2.8.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure-plugin-api/2.8.1/8d8c3889156f3122b76c4ee77499ec09120a0b9b/allure-plugin-api-2.8.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.qameta.allure/allure-plugin-api/2.8.1/ea98e5e3ff706be89917479e74751d58b34dcab/allure-plugin-api-2.8.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

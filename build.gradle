@@ -1,0 +1,56 @@
+plugins {
+    id 'java'
+    id "io.qameta.allure" version "2.5"
+}
+
+group 'Vendor'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    testCompile 'io.rest-assured:rest-assured:3.2.0'
+    compile group: 'io.rest-assured', name: 'rest-assured', version: '3.2.0'
+    compile group: 'io.rest-assured', name: 'json-schema-validator', version: '3.2.0'
+    testCompile group: 'io.cucumber', name: 'cucumber-java', version: '2.4.0'
+    testCompile group: 'io.cucumber', name: 'cucumber-picocontainer', version: '2.4.0'
+    testCompile group: 'io.cucumber', name: 'cucumber-testng', version: '2.4.0'
+    compile group: 'io.appium', name: 'java-client', version:'6.1.0'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+    testCompile group: 'org.skyscreamer', name: 'jsonassert', version: '1.5.0'
+    compile group: 'io.qameta.allure', name: 'allure-testng', version: '2.7.0'
+    compile group: 'io.qameta.allure', name: 'allure-plugin-api', version: '2.8.1'
+
+    //compile 'io.qameta.allure:allure-cucumber3-jvm:2.7.0'
+    //testCompile group: 'io.qameta.allure', name: 'allure-cucumber2-jvm', version: '2.7.0'
+}
+//configurations {
+//    cucumberRuntime.extendsFrom testRuntime
+//}
+//task cucumber() {
+//    dependsOn assemble, compileTestJava
+//    doLast {
+//        javaexec {
+//            main = "cucumber.api.cli.Main"
+//            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+//            args = ['--plugin', 'pretty', '--plugin io.qameta.allure.cucumber2jvm.AllureCucumber2Jvm ', '--glue', 'api', 'src/test/resources/api/features/']
+//        }
+//    }
+//}
+
+allure {
+    version = '2.7.0'
+    autoconfigure = true
+    aspectjweaver = true
+    allureJavaVersion = '2.0-BETA22'
+    boolean clean = true
+    resultsDir = file('/build/allure-results')
+    reportDir = file('build/reports/allure-report')
+    String configuration = 'testCompile'
+    downloadLink = 'http://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.7.0/allure-commandline-2.7.0.zip'
+}

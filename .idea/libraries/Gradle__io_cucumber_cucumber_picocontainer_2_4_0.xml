@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.cucumber:cucumber-picocontainer:2.4.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-picocontainer/2.4.0/1c8f8a54fae433b1a7d7afcc689697fba3970561/cucumber-picocontainer-2.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-picocontainer/2.4.0/b9dc31ad72ecdb4798782a9d1c01503fb4e140ef/cucumber-picocontainer-2.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
